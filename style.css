@@ -1,0 +1,175 @@
+body{
+    background-image: url("./src/img/fondoMichi.jpg");
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.titleStart{
+    margin: 10px;
+}
+
+.randomMichis{
+    width: 100%;
+    text-align: center;
+}
+.titleMichis{
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+}
+.like{
+    width: 60px;
+    height: 60px;
+}
+
+.containerRandomMichis{
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben */
+    justify-content: center;
+    align-items: center; 
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #ffffff45;
+}
+@media (max-width: 70%) {
+    .containerRandomMichis {
+        flex-direction: column; /* Cambia a columna si no caben en el 70% del ancho */
+        align-items: flex-start; /* Alinea los elementos en la parte superior */
+    }
+}
+.imagenesGatos{
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    
+}
+
+.containerSave{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.like {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.4s;
+    cursor: pointer;
+  }
+  
+  .containerSave:hover img.imagenesGatos {
+    filter: blur(2px); /* Aplica el efecto de desenfoque solo a la imagen de fondo cuando se hace hover */
+  }
+  
+  .containerSave:hover .like {
+    opacity: 1;
+  }
+  
+
+.buttonReload{
+    margin-top: 5px;
+    width: 160px;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    border: none;
+    color: #000;
+    
+}
+.buttonReload:hover{
+    background-color: #fe6f23;
+    color: #fff;
+}
+
+.buttonGeneral{
+    margin-top: 5px;
+    width: 160px;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    border: none;
+    color: #000;
+}
+.buttonGeneral:hover{
+    background-color: #fe6f23;
+    color: #fff;
+}
+
+.containerFavorites{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+
+input{
+    width: 150px;
+    padding: 7px;
+}
+
+#uploadingMichi {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.uploadingText {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.containeruploading {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#uploadingForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="file"] {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
